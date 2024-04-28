@@ -51,6 +51,7 @@ function setActive(button) {
 
   button.classList.add("active-button");
 }
+
 function showYoga() {
   document.getElementById("title-1").textContent = "Why are your Yoga?";
   document.getElementById("content-1").textContent =
@@ -140,17 +141,6 @@ function updateTrianglePosition(bmi) {
   }
 
   triangle.style.transform = `translateX(${translateXValue}%)`;
-}
-
-function setActive(button) {
-  // Önce tüm butonlardan 'active-button' sınıfını kaldır
-  var buttons = document.querySelectorAll(".blue-button-3");
-  buttons.forEach(function (btn) {
-    btn.classList.remove("active-button");
-  });
-
-  // Şimdi tıklanan butona 'active-button' sınıfını ekle
-  button.classList.add("active-button");
 }
 
 function showYoga() {

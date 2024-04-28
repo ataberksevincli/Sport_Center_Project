@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var buttons = document.querySelectorAll(".blue-button-3");
-
+  // Buton olaylarını ayarlama
+  const buttons = document.querySelectorAll(".blue-button-3");
   buttons.forEach(function (button) {
     button.addEventListener("click", function () {
       setActive(button);
@@ -22,17 +22,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Scroll olayı ekleme
+  const navbarOverlay = document.querySelector(".navbar-overlay");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbarOverlay.classList.add("scrolled");
+    } else {
+      navbarOverlay.classList.remove("scrolled");
+    }
+  });
+
+  // BMI hesaplama fonksiyonları için event listener ekleme
+  document
+    .getElementById("height-input")
+    .addEventListener("input", calculateBMI);
+  document
+    .getElementById("weight-input")
+    .addEventListener("input", calculateBMI);
 });
 
+// Aktif butonu ayarlayan fonksiyon
 function setActive(button) {
   var buttons = document.querySelectorAll(".blue-button-3");
   buttons.forEach(function (btn) {
-    btn.classList.remove("active-button"); // Eski aktif butonun sınıfını kaldır
+    btn.classList.remove("active-button");
   });
 
-  button.classList.add("active-button"); // Yeni tıklanan butona 'active-button' sınıfını ekle
+  button.classList.add("active-button");
 }
-
 function showYoga() {
   document.getElementById("title-1").textContent = "Why are your Yoga?";
   document.getElementById("content-1").textContent =

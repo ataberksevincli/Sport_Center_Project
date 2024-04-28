@@ -1,0 +1,23 @@
+.hero {
+  background-color: aqua;
+  background-image: url(../images/hero-man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 320px;
+  padding-bottom: 150px;
+  color: white;
+}
+
+section .card h5 {
+  
+  color: var(--font-color-1);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+section .card p {
+  
+  color: var(--font-color-4);
+  font-size: 18px;
+  font-weight: bolder;
+}

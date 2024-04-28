@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Center</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- NAV BAR START -->
+    <header class="header-fixed">
+      <div class="container navbar-overlay">
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-light top-nav">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="Logo" class="navbar-img">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto offset-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trainer">Trainer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#join-us" style="background-color: var(--font-color-3); border-radius: 5px;">JOIN US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- NAVBAR END-->
+
+    <!-- HERO SECTION START -->
+    <section class="hero">
+        <div class="container my-mt">
+          <span class="blue-button-1 font-weight-bold shadow-sm text-shadow"
+            >POWERFULL</span
+          >
+          <h1 class="display-3 text-shadow font-weight-bold">
+            Group <br />
+            Practice <br />
+            With Trainer
+          </h1>
+          <p
+            class="h5 font-weight-bold"
+            style="line-height: 150%;  background-color: rgba(0, 0, 0, 0.395); color: rgb(255, 255, 255)"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+            excepturi aliquam optio facilis deleniti sed consectetur! Beatae
+            quod ipsa, veniam saepe alias perferendis dolor numquam aperiam
+            voluptas facilis placeat repudiandae quis asperiores quidem,
+            molestiae laudantium fugit tenetur consequatur quos consectetur.
+          </p>
+          <div class="mt-4">
+            <button
+              class="blue-button-2 font-weight-bold shadow-sm text-shadow ml-4 rounded-sm btn-lg"
+              style="display: inline; text-align: center"
+              >Sign Up</button
+            >
+            <button
+              class="transparent-button font-weight-bold shadow-sm text-shadow ml-4 rounded-sm btn-lg"
+              style="display: inline; text-align: center"
+              >Details</button
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+    <!-- CARD SECTION START -->
+    <section class="card">
+      <div style="background-color: var(--font-color-5)">
+      <div class="container p-4">
+        <div class="row text-center">
+          <div class="col-sm-12 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">325</h5>
+                <p class="card-text">Course</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">405</h5>
+                <p class="card-text">Work Out</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">305</h5>
+                <p class="card-text">Working Hour</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">705</h5>
+                <p class="card-text">Happy Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- CARD SECTION END -->
+
+    <!-- OUR CLASSES SECTION START -->
+    <section class="classes-button">
+      <div class="grey-path"></div>
+    <div class="p-5 text-center">
+      <div class="container">
+      <h4 class="text-center" style="color: var(--font-color-1); font-weight: bold; font-size: 170%;">
+        OUR CLASSES
+      </h4>
+      <hr class="thick-line">
+      <p class="text-align text-center" style="color: var(--font-color-4); font-weight: 600;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nihil officiis veniam itaque quia ipsum eveniet, pariatur rem corporis, excepturi culpa mollitia consequatur id nemo.
+      </p>
+
+      <div class="container p-4">
+        <div class=" row text-center">
+          <div class="col-12 col-lg-12 p-5">
+      
+      <button onclick="showYoga()"
+      class="blue-button-3 font-weight-bold shadow-sm text-shadow ml-4 mb-3 rounded-sm btn-lg margin-buttons"
+      style="display: inline; text-align: center">Yoga
+      </button>
+
+      <button onclick="showGroup()"
+      class="blue-button-3 font-weight-bold shadow-sm text-shadow ml-4 rounded-sm btn-lg margin-buttons"
+      style="display: inline; text-align: center">Group
+      </button>
+
+      <button onclick="showSolo()"
+      class="blue-button-3 font-weight-bold shadow-sm text-shadow ml-4 rounded-sm btn-lg margin-buttons"
+      style="display: inline; text-align: center">Solo
+      </button>
+
+      <button onclick="showStretching()"
+      class="blue-button-3 font-weight-bold shadow-sm text-shadow ml-4 rounded-sm btn-lg"
+      style="display: inline; text-align: center">Stretching
+      </button>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" id="content">
+
+            <h3 class="text-align " style="text-align: left;" id="title-1">Why are your Yoga?</h3>
+
+            <p style="text-align: left;" id="content-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptas accusantium molestiae illo hic? Commodi ducimus quo voluptatibus molestias ipsum nam dolorum quia dolor earum.</p>
+
+            <h3 style="text-align: left;" class="mt-4" id="title-2">When comes Yoga Your Time.</h3>
+
+            <p style="text-align: left;" id="content-2">Saturday-Sunday: 8:00am - 10:00am</p>
+
+            <p style="text-align: left;" id="content-3">Monday-Tuesday: 10:00am - 12:00pm</p>
+
+            <p style="text-align: left;" id="content-4">Wednesday-Friday: 3:00pm - 6:00pm</p>
+
+          </div>
+        
+              <div div class="col-lg-6">
+                  <img src="images/yoga.jpg" width="70%"  class="mt-3" alt="" id="image-1">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+    </section>
+    <!-- OUR CLASSES SECTION END -->
+
+    <!--BMI CALCULATOR SECTION START-->
+    <section class="bmicalc">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col lg-6">
+          <h4 class="text-align" style=" font-size: 32px; font-weight: bold;  text-align: left; color: var(--font-color-1);">BMI Calculator</h4>
+
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis esse nulla aperiam dolorem magnam rem saepe quod quisquam voluptas quae!</p>
+
+            <p style="text-align: left;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores omnis voluptatem dolorem labore veniam debitis magnam ducimus, quam suscipit velit.</p>
+
+          <div>
+            <input type="text"  placeholder="Your Height (cm)" name="" id="height-input" class="mr-5" style="border-radius: 5%; border-color: white;">
+            <input type="text" placeholder="Your Weight (kg)"  name="" id="weight-input" style="border-radius: 5%; border-color: white;">
+          </div>
+
+          
+        </div>
+        <div class="col-lg-6 ml-3">
+          <img src="images/bmi-index.jpg" style="float: right;" width="70%" class="image-bmi mt-3" alt="">
+          <div class="triangle" id="triangle"></div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--BMI CALCULATOR SECTION END-->
+
+     <!--OUR BEST TRAINERS SECTION START-->
+     <section class="best-trainers mt-5">
+      <div class="p-5 text-center" style="background-color: var(--font-color-5);">
+        <div class="container">
+        <h4 class="text-center" style="color: var(--font-color-1); font-weight: bold; font-size: 170%;">
+          OUR BEST TRAINERS
+        </h4>
+        <hr class="thick-line">
+        <p class="text-align text-center" style="color: var(--font-color-4); font-weight: 600;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias optio perspiciatis explicabo rem minus quia amet, eligendi, animi eaque iure quod!
+        </p>
+  
+        <div class="container mt-5">
+          <div class="row ">
+            <div class="col-12 col-lg-4 mb-5">
+              <img src="images/trainer1.jpg" alt="Trainer 1" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-4 mb-5">
+              <img src="images/trainer2.jpg" alt="Trainer 2" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-4 mb-5">
+              <img src="images/trainer3.jpg" alt="Trainer 3" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+      </section>
+     <!--OUR BEST TRAINERS SECTION END-->
+
+      <!--PURCHASE SECTION START-->
+      <section class="purchase mt-5">
+      <div class="p-5 text-center">
+        <div class="container">
+        <h4 class="text-center" style="color: var(--font-color-1); font-weight: bold; font-size: 170%;">PURCHASE FROM US</h4>
+        <hr class="thick-line">
+        <p class="text-align text-center" style="color: var(--font-color-4); font-weight: 600;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum earum sunt, sequi perspiciatis veniam amet laboriosam. Sunt placeat nam, nulla error temporibus dolor.
+        </p>
+  
+        <div class="container mt-5">
+          <div class="row">
+            <div class="card col-12 col-lg-3 mb-5 p-0">
+              <img class="card-img-top" src="images/purchase1.jpg" alt="Kettlebell / 5kg" style="width: 100%;">
+              <div class="card-body shadow-lg">
+                <h4 class="card-text">Kettlebell / 5kg</h4>
+                <p class="card-text">89.99$ / 59.99$</p>
+                <div class="d-flex align-items-center" style="justify-content: flex-start;">
+                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                  <p class="mb-0 ml-5">Add to cart</p>
+                </div>
+              </div>
+            </div>
+        
+            
+            <div class="card col-12 col-lg-3 mb-5 p-0">
+              <img class="card-img-top" src="images/purchase2.jpg" alt="Treadmill" style="width: 100%;">
+              <div class="card-body shadow-lg">
+                <h4 class="card-text">Treadmill</h4>
+                <p class="card-text">899.99$ / 599.99$</p>
+                <div class="d-flex align-items-center" style="justify-content: flex-start;">
+                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                  <p class="mb-0 ml-5">Add to cart</p>
+                </div>
+              </div>
+            </div>
+        
+           
+            <div class="card col-12 col-lg-3 mb-5 p-0">
+              <img class="card-img-top" src="images/purchase3.jpg" alt="Adjustable Dumbbell" style="width: 100%;">
+              <div class="card-body shadow-lg">
+                <h4 class="card-text">Adjustable Dumbbell</h4>
+                <p class="card-text">89.99$ / 59.99$</p>
+                <div class="d-flex align-items-center" style="justify-content: flex-start;">
+                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                  <p class="mb-0 ml-5">Add to cart</p>
+                </div>
+              </div>
+            </div>
+        
+           
+            <div class="card col-12 col-lg-3 mb-5 p-0">
+              <img class="card-img-top" src="images/purchase4.jpg" alt="Adjustable Dumbbell" style="width: 100%;">
+              <div class="card-body shadow-lg">
+                <h4 class="card-text">Kettlebell / 3kg</h4>
+                <p class="card-text">89.99$ / 59.99$</p>
+                <div class="d-flex align-items-center" style="justify-content: flex-start;">
+                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                  <p class="mb-0 ml-5">Add to cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+      </section>
+      <!--PURCHASE SECTION END-->
+
+      <!--REVIEW CLIENT SECTION START-->
+      <section class="review-client" >
+        <div class="bg-size">
+        <div class="p-5 text-center" >
+          <div class="container">
+          <h4 class="text-center" style="color: var(--font-color-1); font-weight: bold; font-size: 170%;">
+            REVIEW CLIENT
+          </h4>
+          <hr class="thick-line">
+          <p class="text-align text-center" style="color: var(--font-color-4); font-weight: 600;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium officia ut voluptates numquam accusamus sapiente ab cum earum corrupti.
+          </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <div class="card-review" style="position: relative; background-color: var(--font-color-1);">
+                <div class="profile-info">
+                  <img src="images/client1.jpg" alt="Profile Photo" class="profile-photo">
+                  <div class="profile-details">
+                    <h4 class="profile-name">Diet EXpert</h4>
+                    <p class="profile-desc">CFO</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text" style="color: var(--font-color-2);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe et harum quisquam suscipit non vel illo eligendi soluta fuga maiores, aperiam nemo maxime odit!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="card-review" style="position: relative; background-color: var(--font-color-1);">
+                <div class="profile-info">
+                  <img src="images/client2.jpg" alt="Profile Photo" class="profile-photo">
+                  <div class="profile-details">
+                    <h4 class="profile-name">Cardio Trainer</h4>
+                    <p class="profile-desc">CEO</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text" style="color: var(--font-color-2);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repudiandae in veritatis! Ab, at voluptatum. Veniam, ducimus! Optio, nostrum inventore!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div> 
+      </section>
+      <!--REVIEW CLIENT SECTION END-->   
+      
+      <!--CONTACT US SECTION START-->
+    <section id="contact-us" class="mb-5">
+      <div class="p-5 text-center">
+        <div class="container">
+        <h4 class="text-center" style="color: var(--font-color-1); font-weight: bold; font-size: 170%;">
+          CONTACT US
+        </h4>
+        <hr class="thick-line">
+        <p class="text-align text-center" style="color: var(--font-color-4); font-weight: 600;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere delectus possimus dignissimos ex? Officiis recusandae eum magni, consequuntur minima ullam.
+        </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            
+            <div class="d-flex">
+              <div class="mr-5">
+                <h4>Mobile Number</h4>
+                <p>+90 532 23 29</p>
+              </div>
+
+              <div>
+                <h4>Mobile Number</h4>
+                <p>+90 532 23 29</p>
+              </div>  
+          </div>
+
+          <div>
+
+            <div class="container">
+              <div class="row">
+                  <form action="/action_page.php">
+                    <h4>Make An Appointment</h4>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="color: var(--font-color-4);">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                  </form>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03588071093!2d-74.30930389512841!3d40.69753999582453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1714327420773!5m2!1str!2str" width="600" height="450" style="border:0; width: 90%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--CONTACTS US SECTION END-->
+
+
+      <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+          <img src="images/logo.png" alt="" style="width: 20%;">
+          <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eaque dolore suscipit, commodi facere quos? Deleniti, ullam placeat in eligendi vel magnam, itaque recusandae sapiente, ea debitis illum. Voluptate illum obcaecati blanditiis provident aliquid minima incidunt amet quis dicta perferendis?</p>
+      </div>
+      
+      <div class="container offset-4">
+        <div class="row">
+          <div class=" col-sm-6 col-lg-6 mt-3">
+            <h4 style="color: white;">Information</h4>
+            <ul style="list-style: none; color: white;">
+            <li class="mt-2">About us</li>
+            <li class="mt-2" >Classes</li>
+            <li class="mt-2">Blog</li>
+            <li class="mt-2">Contact</li>
+          </ul>
+          </div>
+          <div class=" col-sm-6 col-lg-6 mt-3">
+            <h4 style="color: white;">Helpful Links</h4>
+            <ul style="list-style: none; color: white;">
+              <li class="mt-2">About us</li>
+              <li class="mt-2" >Classes</li>
+              <li class="mt-2">Blog</li>
+              <li class="mt-2">Contact</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

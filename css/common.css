@@ -1,0 +1,32 @@
+:root {
+  --font-color-1: #26588b;
+  --font-color-2: rgb(255, 255, 255);
+  --font-color-3: orange;
+  --font-color-4: black;
+  --font-color-5: hsl(209, 70%, 90%);
+  --font-color-6: #8096be;
+}
+
+.blue-button-1 {
+  background-color: var(--font-color-1) !important;
+  color: rgb(255, 255, 255);
+  padding: 2px 8px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blue-button-2 {
+  background-color: var(--font-color-1) !important;
+  color: white;
+  border: 1px solid var(--font-color-1);
+  padding: 4px 10px;
+}
+
+.transparent-button {
+  background-color: transparent !important;
+  color: white;
+  border: 1px solid white;
+  padding: 4px 10px;
+}

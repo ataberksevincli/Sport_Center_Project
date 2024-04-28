@@ -1,0 +1,18 @@
+.image-bmi {
+  width: 430px;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid var(--font-color-3);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-345%);
+}

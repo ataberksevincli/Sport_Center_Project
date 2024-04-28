@@ -1,0 +1,67 @@
+.card-review::after {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: var(--font-color-6);
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  left: 0;
+}
+
+.card-review {
+  position: relative;
+}
+
+.card-review::before {
+  position: absolute;
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  background-color: var(--font-color-6);
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  right: 0;
+  top: 100%;
+}
+
+.bg-size {
+  background-color: var(--font-color-5);
+  padding-bottom: 10%;
+}
+
+.profile-info {
+  position: absolute;
+  top: -60px; /* Yukarı değeri artırıldı */
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 16px;
+  color: var(--font-color-1);
+  margin-bottom: 2px;
+}
+
+.profile-desc {
+  font-size: 12px;
+  color: var(--font-color-2);
+}
+
+@media (max-width: 576px) {
+  .card-review {
+    margin-top: 10px;
+    margin-bottom: 100px; /* Kartlar arası dikey boşluğu artır */
+  }
+}

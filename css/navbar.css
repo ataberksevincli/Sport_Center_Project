@@ -1,56 +1,88 @@
-.top-nav {
-  font-size: 17px;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  font-weight: 600;
-  padding: 0px;
-  margin: 2px;
-  color: white !important;
+#header {
   background: transparent;
+  height: 0px;
+  align-items: center;
+}
+
+#header.header-scrolled {
+  height: 50px;
+  background-color: #355592;
+  transition: 0.2ms;
+}
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .logo img {
+  display: block;
+}
+
+#navbar {
+  padding: 0;
+  background: transparent;
+  position: static;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #navbar li {
   position: relative;
-  padding: 8px;
+  padding: 6px 10px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+#navbar li a {
   color: white;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.navbar-img {
-  width: 75%;
-}
-
-.header-fixed + .content {
-  padding-top: 70px; /* Sabit navbar altındaki içeriğin üstte kalmaması için */
-}
-
-.navbar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: transparent; /* Başlangıçta şeffaf arka plan */
-  transition: background-color 0.3s ease; /* Arka plan rengi geçiş süresi */
-}
-
-.nav-link {
-  color: white !important; /* Navigasyon linklerinin beyaz olması */
-  font-weight: bold; /* Link font ağırlığı */
-}
-
-.scrolled {
-  background-color: #355592 !important; /* Scroll sonrası arka plan rengi */
-}
-
-@media (max-width: 576px) {
-  .navbar-toggler {
-    display: block; /* Küçük ekranlarda hamburger menüsünün görünmesi */
+@media (max-width: 767.98px) {
+  #header {
+    background: transparent;
+    height: 0px;
+    align-items: center;
   }
 
-  .navbar-collapse {
-    background-color: white; /* Menü genişlediğinde beyaz arka plan */
+  #header .logo img {
+    z-index: 1000;
+  }
+
+  #navbar .navbar-toggler {
+    color: transparent;
+    border: 0;
+    z-index: 1100;
+  }
+
+  #navbar .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  #navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #355592;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  #header.header-scrolled {
+    height: 50px;
+    background-color: #355592;
+    transition: 1ms;
   }
 }

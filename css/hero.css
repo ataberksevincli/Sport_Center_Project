@@ -9,14 +9,12 @@
 }
 
 section .card h5 {
-  
   color: var(--font-color-1);
   font-size: 22px;
   font-weight: bold;
 }
 
 section .card p {
-  
   color: var(--font-color-4);
   font-size: 18px;
   font-weight: bolder;
